@@ -1,0 +1,46 @@
+{
+  "name": "everything-http-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that turns the Everything (voidtools) HTTP server into AI-callable file search, with auto-start for Everything",
+  "type": "module",
+  "bin": {
+    "everything-http-mcp": "src/server.js"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node src/server.js",
+    "smoke": "node test/smoke.mjs",
+    "test:readiness": "node test/readiness.mjs",
+    "test:offline": "node test/offline.mjs",
+    "test:live": "node test/live-autostart.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "everything",
+    "voidtools",
+    "file-search",
+    "windows",
+    "ai-agent"
+  ],
+  "license": "MIT",
+  "author": "fishOfOUC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fishOfOUC/everything-http-mcp.git"
+  },
+  "homepage": "https://github.com/fishOfOUC/everything-http-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/fishOfOUC/everything-http-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}
