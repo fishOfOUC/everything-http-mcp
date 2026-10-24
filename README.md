@@ -1,7 +1,11 @@
 # everything-http-mcp
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](https://nodejs.org/)
+
 把 **Everything（voidtools）自带的 HTTP 服务器** 变成 AI 可直接调用的文件搜索能力。零依赖 Everything SDK，不需要 `Everything64.dll`，也不需要 `es.exe`——只要你已经开启了 Everything 的 HTTP 服务。
 
+> 仓库：<https://github.com/fishOfOUC/everything-http-mcp>
 > 本机默认地址：`http://127.0.0.1:80`（Everything 便携版，`http_server_port=80`）
 
 ## 为什么不用现成的 MCP
